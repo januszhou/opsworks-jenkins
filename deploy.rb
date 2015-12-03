@@ -23,7 +23,7 @@ apps.each do |app|
 end
 
 if opts[:app] == 'ALL'
-    appNames.each do |appId|
+    appNames.each do |appName, appId|
         deploy(appId)
     end
 else
